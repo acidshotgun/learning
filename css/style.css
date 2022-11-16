@@ -1,0 +1,120 @@
+* {
+  box-shadow: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 750px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 150px;
+  height: 800px;
+  background-color: #00ffb3;
+}
+.main .block {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  height: 600px;
+  border: solid 2px;
+  background-image: radial-gradient(green, purple);
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 10px;
+}
+.main .block_inOne, .main .block_inTwo, .main .block_inThree, .main .block_inFour {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border: solid 2px;
+  background-image: radial-gradient(circle, green 0%, purple 20%, orange 100%);
+  padding: 15px;
+  text-align: center;
+}
+.main .block_inRound {
+  display: flex;
+  position: absolute;
+  left: 295px;
+  top: 259px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: solid 2px;
+  background-image: radial-gradient(circle, green 0%, purple 20%, blue 100%);
+}
+
+.psevdo {
+  padding-top: 100px;
+  min-height: 900px;
+  background-color: rgba(0, 149, 255, 0.3019607843);
+}
+.psevdo .box {
+  height: 150px;
+  width: 200px;
+  background-color: red;
+  transition: 1s all;
+  text-align: center;
+  color: red;
+}
+.psevdo .box:hover {
+  background-color: rgba(255, 3, 200, 0.9137254902);
+  color: rgba(255, 3, 200, 0.9137254902);
+}
+.psevdo .box:active {
+  background-color: black;
+  color: white;
+}
+.psevdo span {
+  display: inline-block;
+  margin-top: 50px;
+}
+.psevdo button {
+  margin: 60px 0 60px 0;
+  width: 150px;
+  height: 45px;
+  background-color: #ffe66b;
+  border: none;
+  cursor: pointer;
+  transition: 1s all;
+}
+.psevdo button:hover {
+  background-color: rgba(255, 3, 108, 0.5647058824);
+  color: white;
+}
+.psevdo button:active {
+  background-color: orange;
+}
+.psevdo button:focus {
+  background-color: rgba(53, 3, 255, 0.4235294118);
+  border: solid 2px;
+}
+.psevdo .circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 100%;
+  margin-top: 10px;
+  transition: 1s all;
+}
+.psevdo .circle:nth-child(2n+1) {
+  background-color: red;
+}
+.psevdo .circle::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 0%;
+  background-color: black;
+  transition: 1s all;
+}
+.psevdo .circle:hover {
+  background-color: rgba(53, 3, 255, 0.4235294118);
+}
+.psevdo .circle:hover::before {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
