@@ -2,16 +2,22 @@
     box-shadow: border-box
     margin: 0
     padding: 0
+a
+    text-decoration: none
 body
     background-color: #8f8f8f62
+// ----- Это миксин для хэдэра и футера, т.к они одинаковые
+@mixin header_footer
+    height: 60px
+    background-color: #171717
+    margin-top: 20px
+
 
 .head
     height: 603px
     background: url('../img/1094730.jpg')
 header
-    height: 60px
-    background-color: black
-    margin-top: 20px
+    @include header_footer
     .subheader
         &_descr
             display: flex 
@@ -20,7 +26,7 @@ header
             margin-top: 0px
             text-transform: uppercase
             button
-                background-color: black
+                background-color: #171717
                 color: white
                 margin-top: 10px
                 width: 150px
@@ -32,13 +38,6 @@ header
                 &:hover
                     background-color: #8f8f8f62
                     
-            
-
-
-
-
-
-
 .content
     padding-top: 20px
     &_left_menu
@@ -52,6 +51,10 @@ header
     &_pictures
         background-color: white
         padding: 20px
+        &_descr
+            height: 50px
+            border: 2px solid black
+            margin-bottom: 20px
         &_wrap
             .wrap_block
                 display: flex
@@ -64,13 +67,46 @@ header
                     // расположение в блоке
                     object-fit: contain
                     margin-bottom: 5px
-                
 
-            
+footer
+    @include header_footer
+    .social
+        height: 60px
+        display: flex
+        align-items: center
+        a
+            margin-left: 10px 
+        .icon-twitch
+            transition: 1s all
+            &:hover
+                color: #6441a5
+        .icon-vk
+            transition: 1s all
+            &:hover
+                color:#4C75A3
+        .icon-soundcloud
+            transition: 1s all
+            &:hover
+                color: #ff7700
+        .icon-youtube
+            transition: 1s all
+            &:hover
+                color:  #ff0000
+        .icon-instagram
+            transition: 1s all
+            &:hover
+                color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
 
 
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+//----------------------ЭТО ТРЕНИРОВКА----------------------
 .main
     padding-top: 150px
     height: 800px

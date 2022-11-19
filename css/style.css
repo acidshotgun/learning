@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: rgba(143, 143, 143, 0.3843137255);
 }
@@ -15,7 +19,7 @@ body {
 
 header {
   height: 60px;
-  background-color: black;
+  background-color: #171717;
   margin-top: 20px;
 }
 header .subheader_descr {
@@ -26,7 +30,7 @@ header .subheader_descr {
   text-transform: uppercase;
 }
 header .subheader_descr button {
-  background-color: black;
+  background-color: #171717;
   color: white;
   margin-top: 10px;
   width: 150px;
@@ -57,6 +61,11 @@ header .subheader_descr button:hover {
   background-color: white;
   padding: 20px;
 }
+.content_pictures_descr {
+  height: 50px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
 .content_pictures_wrap .wrap_block {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +77,50 @@ header .subheader_descr button:hover {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 5px;
+}
+
+footer {
+  height: 60px;
+  background-color: #171717;
+  margin-top: 20px;
+}
+footer .social {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+footer .social a {
+  margin-left: 10px;
+}
+footer .social .icon-twitch {
+  transition: 1s all;
+}
+footer .social .icon-twitch:hover {
+  color: #6441a5;
+}
+footer .social .icon-vk {
+  transition: 1s all;
+}
+footer .social .icon-vk:hover {
+  color: #4C75A3;
+}
+footer .social .icon-soundcloud {
+  transition: 1s all;
+}
+footer .social .icon-soundcloud:hover {
+  color: #ff7700;
+}
+footer .social .icon-youtube {
+  transition: 1s all;
+}
+footer .social .icon-youtube:hover {
+  color: #ff0000;
+}
+footer .social .icon-instagram {
+  transition: 1s all;
+}
+footer .social .icon-instagram:hover {
+  color: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
 
 .main {
