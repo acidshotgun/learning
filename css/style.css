@@ -116,12 +116,6 @@ footer .social .icon-youtube {
 footer .social .icon-youtube:hover {
   color: #ff0000;
 }
-footer .social .icon-instagram {
-  transition: 1s all;
-}
-footer .social .icon-instagram:hover {
-  color: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
-}
 
 .main {
   padding-top: 150px;
@@ -230,4 +224,13 @@ footer .social .icon-instagram:hover {
 }
 .psevdo .circle:hover::before {
   width: 100%;
+}
+
+.adaptive {
+  height: 800px;
+}
+.adaptive .box {
+  background-color: red;
+  border: 4px solid;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
